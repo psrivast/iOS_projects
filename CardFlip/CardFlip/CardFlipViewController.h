@@ -11,6 +11,4 @@
 
 @interface CardFlipViewController : UIViewController
 
-@property (nonatomic) Deck *deck;
-
 @end
