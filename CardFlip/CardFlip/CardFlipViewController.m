@@ -7,6 +7,7 @@
 //
 
 #import "CardFlipViewController.h"
+#import "Deck.h"
 
 @interface CardFlipViewController ()
 
@@ -14,16 +15,27 @@
 
 @implementation CardFlipViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+- (Deck *)deck {
+    if(!_deck) {
+        _deck = [[PlayingCardDeck alloc]init];
+    }
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)touchCardButton:(UIButton *)sender {
+
+    if([sender.currentTitle length] != 0) {
+        [sender setBackgroundImage:[UIImage imageNamed:@"cardback"]
+                          forState:UIControlStateNormal];
+        [sender setTitle:@"" forState:UIControlStateNormal];
+    }
+    else {
+        [sender setBackgroundImage:[UIImage imageNamed:@"cardfront"]
+                          forState:UIControlStateNormal];
+        [sender setTitle:@"A♣️" forState:UIControlStateNormal];
+    }
+    
 }
+
+
 
 @end

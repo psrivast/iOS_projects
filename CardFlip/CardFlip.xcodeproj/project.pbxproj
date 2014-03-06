@@ -21,6 +21,10 @@
 		F59E677018C7DD6B0070893E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F59E675218C7DD6B0070893E /* UIKit.framework */; };
 		F59E677818C7DD6B0070893E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F59E677618C7DD6B0070893E /* InfoPlist.strings */; };
 		F59E677A18C7DD6B0070893E /* CardFlipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F59E677918C7DD6B0070893E /* CardFlipTests.m */; };
+		F59E678C18C7F9430070893E /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = F59E678B18C7F9430070893E /* Deck.m */; };
+		F59E678F18C7FD1D0070893E /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = F59E678E18C7FD1D0070893E /* Card.m */; };
+		F59E679218C804590070893E /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = F59E679118C804590070893E /* PlayingCard.m */; };
+		F59E679518C8197B0070893E /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = F59E679418C8197B0070893E /* PlayingCardDeck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,14 @@
 		F59E677518C7DD6B0070893E /* CardFlipTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CardFlipTests-Info.plist"; sourceTree = "<group>"; };
 		F59E677718C7DD6B0070893E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F59E677918C7DD6B0070893E /* CardFlipTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardFlipTests.m; sourceTree = "<group>"; };
+		F59E678A18C7F9430070893E /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		F59E678B18C7F9430070893E /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		F59E678D18C7FD1D0070893E /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		F59E678E18C7FD1D0070893E /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		F59E679018C804590070893E /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		F59E679118C804590070893E /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
+		F59E679318C8197B0070893E /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
+		F59E679418C8197B0070893E /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +131,14 @@
 				F59E676418C7DD6B0070893E /* CardFlipViewController.m */,
 				F59E676618C7DD6B0070893E /* Images.xcassets */,
 				F59E675518C7DD6B0070893E /* Supporting Files */,
+				F59E678A18C7F9430070893E /* Deck.h */,
+				F59E679018C804590070893E /* PlayingCard.h */,
+				F59E679118C804590070893E /* PlayingCard.m */,
+				F59E678B18C7F9430070893E /* Deck.m */,
+				F59E678D18C7FD1D0070893E /* Card.h */,
+				F59E678E18C7FD1D0070893E /* Card.m */,
+				F59E679318C8197B0070893E /* PlayingCardDeck.h */,
+				F59E679418C8197B0070893E /* PlayingCardDeck.m */,
 			);
 			path = CardFlip;
 			sourceTree = "<group>";
@@ -250,7 +270,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F59E679218C804590070893E /* PlayingCard.m in Sources */,
+				F59E678F18C7FD1D0070893E /* Card.m in Sources */,
+				F59E678C18C7F9430070893E /* Deck.m in Sources */,
 				F59E675B18C7DD6B0070893E /* main.m in Sources */,
+				F59E679518C8197B0070893E /* PlayingCardDeck.m in Sources */,
 				F59E675F18C7DD6B0070893E /* CardFlipAppDelegate.m in Sources */,
 				F59E676518C7DD6B0070893E /* CardFlipViewController.m in Sources */,
 			);
@@ -461,6 +485,7 @@
 				F59E677F18C7DD6B0070893E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F59E678018C7DD6B0070893E /* Build configuration list for PBXNativeTarget "CardFlipTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +494,7 @@
 				F59E678218C7DD6B0070893E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
